@@ -1,7 +1,11 @@
-<div class="col-sm-6 col-sm-offset-3">
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-    <%= f.submit %>
-  <% end %>
+
+<div class="form-wrapper">
+  <h1>What's in this thing?</h1>
+  <div class="col-sm-6">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.submit %>
+    <% end %>
+  </div>
 </div>

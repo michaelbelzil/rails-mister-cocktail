@@ -1,9 +1,9 @@
 <div class="ingredients-wrapper">
-  <h1>Time for a <%= @cocktail.name %>!</h1><hr>
-  <h2>Ingredients:</h2>
+  <h1>Time for a <%= @cocktail.name %>!</h1>
+  <p>Ingredients:</p>
   <ul>
   <% @cocktail.doses.each do |dose| %>
-  <li><p> <%= dose.ingredient.name %> (<%= dose.description %>) </p> <%= link_to "Delete Ingredient", dose_path(dose), method: "delete" %></li>
+  <li> <%= dose.ingredient.name %> (<%= dose.description %>) <%= link_to dose_path(dose), method: "delete" do %><i class="fas fa-trash delete-icon"></i><% end %></li>
   <% end %>
   </ul>
   <div class="ingredients-buttons-wrapper">

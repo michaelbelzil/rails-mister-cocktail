@@ -14,7 +14,9 @@
         </div>
         <div class="card-description">
           <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-          <p><%= cocktail.ingredients.first.name %></p>
+          <%if cocktail.ingredients.first.present? %>
+            <p> <%= cocktail.ingredients.first.name %> </p>
+            <% end %>
         </div>
       </div>
     <% end %>

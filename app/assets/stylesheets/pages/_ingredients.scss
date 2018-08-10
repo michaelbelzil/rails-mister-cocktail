@@ -12,7 +12,16 @@
   h1 {
     text-size: 48px;
     color: #8C6856;
+    border-bottom: 4px double goldenrod;
   }
+
+  p, li {
+    color: cornsilk;
+  }
+}
+
+.delete-icon {
+  font-size: 10px;
 }
 
 .ingredients-buttons-wrapper {
@@ -21,11 +30,11 @@
   a{
     margin: 4px;
     background: goldenrod;
+    width: 25rem;
     &:hover{
       color: #2B2A28;
     }
   }
-  flex-direction: column;
 
 
 }
