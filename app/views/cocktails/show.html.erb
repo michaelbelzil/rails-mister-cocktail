@@ -1,10 +1,14 @@
-<h1><%= @cocktail.name %> info:</h1><hr>
-<h1>Ingredients:</h1>
-<ul>
-<% @cocktail.doses.each do |dose| %>
-<li><p> <%= dose.ingredient.name %> (<%= dose.description %>) </p> <%= link_to "Delete", dose_path(dose), method: "delete" %></li>
-<% end %>
-</ul>
-<%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
-<%= link_to "Back", cocktails_path, class: "btn btn-primary" %>
-
+<div class="ingredients-wrapper">
+  <h1>Time for a <%= @cocktail.name %>!</h1><hr>
+  <h2>Ingredients:</h2>
+  <ul>
+  <% @cocktail.doses.each do |dose| %>
+  <li><p> <%= dose.ingredient.name %> (<%= dose.description %>) </p> <%= link_to "Delete Ingredient", dose_path(dose), method: "delete" %></li>
+  <% end %>
+  </ul>
+  <div class="ingredients-buttons-wrapper">
+    <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+    <%= link_to "Delete", cocktail_path, method: "delete", class: "btn btn-primary" %>
+    <%= link_to "Back", cocktails_path, class: "btn btn-primary" %>
+  </div>
+</div>

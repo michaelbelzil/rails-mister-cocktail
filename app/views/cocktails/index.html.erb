@@ -1,14 +1,14 @@
-<div class="banner" style="background-image: url('https://source.unsplash.com/-7XBGB1dW8w/1600x900');">
-  <div class="banner-content">
-    <h1>All Cocktails</h1>
-    <p>Scroll down and turn up</p>
-  </div>
-</div>
 <div class="page-wrapper">
+  <div class="banner" style="background-image: url('https://source.unsplash.com/y_-8g9iJvcY/1600x900');">
+    <div class="banner-content">
+      <h1>The Tender Bartender</h1>
+      <p>Time for a Treat</p>
+    </div>
+  </div>
   <div class="card-wrapper">
     <div class="card-container">
     <% @cocktails.each do |cocktail| %>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/1600x900/?cocktail');">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/1600x900/?milk');">
         <div class="card-category">
           Popular
         </div>
@@ -16,13 +16,10 @@
           <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
           <p><%= cocktail.ingredients.first.name %></p>
         </div>
-        <!-- <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay"> -->
       </div>
-
     <% end %>
     </div>
   </div>
-  <div class="footer"><%= link_to "Add a Cocktail", new_cocktail_path %></div>
 </div>
 
 

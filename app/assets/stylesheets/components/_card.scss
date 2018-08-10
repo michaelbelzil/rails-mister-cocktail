@@ -5,7 +5,7 @@
 .card-wrapper {
   background: #2B2A28;
   width: 90%;
-  margin: 0 auto;
+  margin: 48px auto 0 auto;
   padding: 24px 0;
 }
 
@@ -50,8 +50,9 @@
   bottom: 10px;
   left: 10px;
 }
-.card-description h2 {
+.card-description a {
   font-size: 24px;
+  color: cornsilk;
 }
 .card-description p {
   font-size: 14px;

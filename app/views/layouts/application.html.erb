@@ -12,6 +12,17 @@
   </head>
 
   <body>
+    <div class="navbar-wagon navbar-fixed-top">
+      <!-- Logo -->
+      <a href="/" class="navbar-wagon-brand">
+        <i class="fas fa-home"></i>
+      </a>
+
+      <!-- Right Navigation -->
+      <div class="navbar-wagon-right hidden-xs hidden-sm">
+        <a href="<%= new_cocktail_path %>" class="navbar-wagon-item navbar-wagon-link">Add a Treat</a>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

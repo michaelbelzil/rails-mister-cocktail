@@ -1,0 +1,31 @@
+.ingredients-wrapper {
+  background: #2B2A28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 24px 0;
+  border: 2px solid goldenrod;
+
+  h1 {
+    text-size: 48px;
+    color: #8C6856;
+  }
+}
+
+.ingredients-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  a{
+    margin: 4px;
+    background: goldenrod;
+    &:hover{
+      color: #2B2A28;
+    }
+  }
+  flex-direction: column;
+
+
+}
